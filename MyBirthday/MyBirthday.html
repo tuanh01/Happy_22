@@ -31,19 +31,20 @@
     </head>
 
     <body>
+        
         <link
             href="https://fonts.googleapis.com/css?family=Wendy+One"
             rel="stylesheet"
             type="text/css"
         />
         <div class="pyro">
-            <div class="before">
+            <div class="before"onclick="showMessage()">
                 
             </div>
-            <div class="after">
+            <div class="after"onclick="showMessage()">
 
             </div>
-            <div class="container">
+            <div class="container"onclick="showMessage()">
                 <!-- 2. Dòng chữ Happy Birthday
                 Nếu bạn muốn thêm chữ vào thì phải thay đổi css tương ứng cho nó -->
                 <div class="balloon">
@@ -69,9 +70,10 @@
                 </div>
                 
                 <!-- 5. Phần nhạc -->
-                <audio id="player" autoplay loop>
+                <audio id="player" autoplay loop autocapitalize="">
                     <source src="./music.mp3" type="audio/mp3">
                 </audio>
+                
             </div>
         </div>
         <script>
